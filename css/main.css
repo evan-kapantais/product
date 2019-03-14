@@ -1,0 +1,53 @@
+@import 'reset.css';
+@import 'buttons.css';
+@import 'text.css';
+@import 'lists.css';
+@import 'media.css';
+
+.hero {
+  padding: 3em 3em;
+  background-image: url('../img/watches.jpg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 120% 100%;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 20%;
+  font-weight: 500;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 0 .2em;
+}
+
+input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.container {
+  width: 60%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container * {
+  margin-bottom: 3rem;
+}
+
+.container p {
+  padding-left: 2em;
+  border-left: 1px solid #333;
+  width: 50%;
+}
