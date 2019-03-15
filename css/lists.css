@@ -1,3 +1,8 @@
 a {
+  color: grey;
+  transition: all .3s ease;
+}
+
+a:hover {
   color: black;
 }

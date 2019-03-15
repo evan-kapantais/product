@@ -26,6 +26,7 @@ input {
   border: none;
   border-bottom: 1px solid gray;
   padding: 0 .2em;
+  background: transparent;
 }
 
 input:focus {
@@ -33,7 +34,7 @@ input:focus {
   border: none;
 }
 
-.container {
+.hero .container {
   width: 60%;
   background: transparent;
   position: absolute;
@@ -42,12 +43,25 @@ input:focus {
   transform: translate(-50%, -50%);
 }
 
-.container * {
+.hero .container * {
   margin-bottom: 3rem;
 }
 
-.container p {
+.hero .container p {
   padding-left: 2em;
   border-left: 1px solid #333;
   width: 50%;
+}
+
+#about {
+  padding: 3em 3em;
+}
+
+.row-3 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row-3 .col-xs-4 {
+  width: 30%;
 }
