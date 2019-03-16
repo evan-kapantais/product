@@ -22,6 +22,10 @@
   font-weight: 500;
 }
 
+.hero, .navbar {
+  display: none;
+}
+
 input {
   border: none;
   border-bottom: 1px solid gray;
@@ -34,7 +38,7 @@ input:focus {
   border: none;
 }
 
-.hero .container {
+.main-container {
   width: 60%;
   background: transparent;
   position: absolute;
@@ -43,25 +47,42 @@ input:focus {
   transform: translate(-50%, -50%);
 }
 
-.hero .container * {
+.main-container * {
   margin-bottom: 3rem;
 }
 
-.hero .container p {
+.main-container p {
   padding-left: 2em;
   border-left: 1px solid #333;
   width: 50%;
 }
 
-#about {
-  padding: 3em 3em;
-}
-
-.row-3 {
+.details-row {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
 }
 
-.row-3 .col-xs-4 {
+.details-col {
   width: 30%;
+}
+
+.details-center {
+  height: 800px;
+}
+
+.details-center-left, .details-center-right {
+  width: 50%;
+  padding: 3em;
+  height: 100%;
+}
+
+.details-center-left {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.details-center-right {
+  float: right;
 }
