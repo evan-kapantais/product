@@ -1,3 +1,13 @@
+.list-item {
+  border-bottom: 1px solid transparent;
+  transition: all .5s ease;
+  margin-right: .6em;
+}
+
+.list-item:hover {
+  border-bottom: 1px solid black;
+}
+
 a {
   color: grey;
   transition: all .3s ease;
